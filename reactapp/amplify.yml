@@ -1,7 +1,7 @@
 version: 1
 applications:
-  - appRoot: reactapp
-  - frontend:
+  - appRoot: /reactapp
+    frontend:
       phases:
         preBuild:
           commands:
@@ -13,10 +13,10 @@ applications:
           commands:
             - npm run build
       artifacts:
-        baseDirectory: build
         files:
-          - '**/*'
+             - '**/*'
+        discard-paths: yes
+        baseDirectory: build
       cache:
         paths:
-          - node_modules/**/*
-    
+             - node_modules/**/*
