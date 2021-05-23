@@ -1,12 +1,12 @@
 version: 1
 applications:
-  - appRoot: /reactapp
+  - appRoot: reactapp
     frontend:
       phases:
         preBuild:
           commands:
             - echo "============================================"
-            - echo "From build root project"
+            - echo "From build local project"
             - echo "============================================"
             - npm ci
         build:
