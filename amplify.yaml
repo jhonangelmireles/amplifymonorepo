@@ -15,8 +15,22 @@ applications:
       artifacts:
         files:
              - '**/*'
-        discard-paths: yes
         baseDirectory: build
       cache:
         paths:
              - node_modules/**/*
+  - appRoot: docs
+    frontend:
+      phases:
+        build:
+          commands:
+            - echo "Nothing to build"
+      artifacts:
+        files:
+             - '**/*'
+        baseDirectory: /docs
+      cache:
+        paths: []
+
+
+
