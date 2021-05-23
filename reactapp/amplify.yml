@@ -4,7 +4,9 @@ applications:
       phases:
         preBuild:
           commands:
-            - echo "from root project"
+            - echo "============================================"
+            - echo "From build root project"
+            - echo "============================================"
             - npm ci
         build:
           commands:
