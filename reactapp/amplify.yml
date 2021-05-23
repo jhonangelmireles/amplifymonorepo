@@ -1,5 +1,6 @@
 version: 1
 applications:
+  - appRoot: reactapp
   - frontend:
       phases:
         preBuild:
@@ -18,4 +19,4 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-    appRoot: reactapp
+    
