@@ -1,0 +1,22 @@
+version: 1
+applications:
+  - appRoot: reactapp
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - echo "============================================"
+            - echo "From build local project"
+            - echo "============================================"
+            - npm ci
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        files:
+             - '**/*'
+        discard-paths: yes
+        baseDirectory: build
+      cache:
+        paths:
+             - node_modules/**/*
