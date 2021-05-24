@@ -1,6 +1,6 @@
 version: 1
 applications:
-  - appRoot: amplifymonorepo/reactapp
+  - appRoot: reactapp
     frontend:
       phases:
         preBuild:
@@ -19,7 +19,7 @@ applications:
       cache:
         paths:
              - node_modules/**/*
-  - appRoot: amplifymonorepo/docs
+  - appRoot: docs
     frontend:
       phases:
         build:
