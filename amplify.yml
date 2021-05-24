@@ -28,7 +28,7 @@ applications:
       artifacts:
         files:
              - '**/*'
-        baseDirectory: /docs
+        baseDirectory: /
       cache:
         paths: []
 
