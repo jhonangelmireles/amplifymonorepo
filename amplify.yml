@@ -25,6 +25,9 @@ applications:
         build:
           commands:
             - echo "Nothing to build"
+            - echo "============================================"
+            - echo "From build docsify local project"
+            - echo "============================================"
       artifacts:
         files:
              - '**/*'
