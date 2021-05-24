@@ -1,6 +1,6 @@
 version: 1
 applications:
-  - appRoot: /reactapp
+  - appRoot: amplifymonorepo/reactapp
     frontend:
       phases:
         preBuild:
@@ -28,7 +28,7 @@ applications:
       artifacts:
         files:
              - '**/*'
-        baseDirectory: /docs
+        baseDirectory: amplifymonorepo/docs
       cache:
         paths: []
 
