@@ -19,7 +19,7 @@ applications:
       cache:
         paths:
              - node_modules/**/*
-  - appRoot: /docs
+  - appRoot: amplifymonorepo/docs
     frontend:
       phases:
         build:
@@ -28,7 +28,7 @@ applications:
       artifacts:
         files:
              - '**/*'
-        baseDirectory: amplifymonorepo/docs
+        baseDirectory: /docs
       cache:
         paths: []
 
